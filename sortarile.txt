@@ -1,0 +1,24 @@
+BubbleSort: compara fiecare 2 elemente consecutive si le interschimba, in functie de criteriul de sortare, pana cand toate
+numerele din vector sunt sortate. Cand se face comparatia cu ultimul numar nesortat, cel care ajunge pe ultima pozitie
+se blocheaza in loc si nu se mai face comparatia cu acesta.
+
+CountSort: se creeaza un numar de bucketuri egal cu k, und k este egal cu max - min + 1, adica diferenta dintre valoarea maxima,
+respectiv minima. In aceste bucketuri se adauga 1 de fiecare data cand elementul k este gasit in arrayul principal. La final,
+se adauga atatea elemente k, cat valoarea din bucketul respectiv, la final obtinandu-se arrayul sortat.
+
+RadixSort(LSD): se creeaza 10 bucketuri, in care punem numerele din arrayul original, in ordinea in care le-am gasit, in functie
+de cifra la care ne aflam. Se incepe sortarea de la cea mai nesemnificativa cifra, adica cea a unitatilor, si se ajunge pana la
+cifra cea mai semnificativa. Dupa ce toate numerele au fost introduse intr-un bucket, vor fi scoase din acesta, in ordine in
+care au fost introduse, dupa care se trece la cifra urmatoare, in functie de care se va face sortarea. Se repeta acest proces
+pana cand toate numerele din arrayul original sunt sortate.
+
+MergeSort: se imparte vectorul in n partitii, unde n este numarul de elemente. Dupa aceea, se imbina, doua cate doua, partitiile
+adiacente. Se ia separat fiecare partitie si se sorteaza elementele din partitia respectiva, dupa care se trece la urmatoarea
+partitie, pana cand toate partitiile de 2 elemente sunt sortate. Se combina partitiile adiacente de aceeasi lungime si se
+sorteaza, pana cand, la final, daca cele doua partitii nu au aceeasi lungime, se combina si se sorteaza, in final sortandu-se
+ultimele doua partitii ramase, pentru a obtine arrayul sortat.
+
+QuickSort: se alege un element drept pivot, in cazul de fata, ultimul element al arrayului. Se imparte arrayul in doua partitii:
+una cu numere mai mici decat pivotul si una cu elemente mai mari decat pivotul. Se repeta acest procedeu pana cand se ajunge la 
+partitii de un element. La final, se imbina partitiile cu elemente mai mici decat pivotul initial, pana se ajunge la pivotul
+respectiv, apoi se imbina cu partitiile cu elemente mai mari decat pivotul initial, in final obtinandu-se arrayul sortat.
